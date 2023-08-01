@@ -14,9 +14,6 @@ function Home() {
             A creative Front End Developer with a passion for learning and
             designing.
           </p>
-          <LinkedInIcon />
-          <EmailIcon />
-          <GithubIcon />
         </div>
       </div>
       <div className="skills">

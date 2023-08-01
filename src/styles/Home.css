@@ -1,10 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Modak&family=Urbanist:wght@500&display=swap");
+
 .home {
   width: 100%;
   align-items: center;
-  font-family: "Arial", sans-serif;
-  color: #3e497a;
+  color: #707c92;
+  font-family: "Urbanist", sans-serif;
 }
 
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+    transform: scale(1);
+  }
+  50% {
+    background-position: 100% 50%;
+    transform: scale(1.1);
+  }
+}
 .about {
   width: 100%;
   height: calc(100vh - 100px);
@@ -13,12 +26,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #21325e;
+  background: linear-gradient(-45deg, #ffe5d9, #86a8e7, #d16ba5, #5ffbf1);
+  background-size: 400% 400%;
+  animation: gradient 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   color: #f0f0f0;
 }
 
 .about h2 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-size: 80px;
   color: #e9d35b;
   height: 50px;

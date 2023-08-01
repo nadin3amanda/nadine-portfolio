@@ -6,8 +6,12 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #1a1919;
-  color: #e2dfdf;
-  /* font-family: 'Modak', cursive; */
+  color: #1a1919;
+  background-color: #e2dfdf;
   font-family: "Urbanist", sans-serif;
+}
+
+h1 {
+  font-family: "Modak", cursive;
+  font: 35px;
 }

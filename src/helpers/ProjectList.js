@@ -1,25 +1,25 @@
-import Proj1 from "../assets/proj1.jpg";
-import Proj2 from "../assets/proj2.jpg";
-import Proj3 from "../assets/proj3.webp";
-import Proj4 from "../assets/proj4.webp";
-import Proj5 from "../assets/proj5.jpg";
-import Proj6 from "../assets/proj6.png";
+import Proj1 from "../assets/project1-crypto.PNG";
+import Proj2 from "../assets/project2-blog.PNG";
+import Proj3 from "../assets/project3-pokemon.PNG";
+import Proj4 from "../assets/project4-giane.PNG";
+import Proj5 from "../assets/project5-gaming.PNG";
+import Proj6 from "../assets/project6-landing.png";
 
 export const ProjectList = [
   {
     name: "Project 1",
     image: Proj1,
-    skills: "JavaScript,HTML,CSS",
+    skills: "React, TypeScript, CSS, Styled components",
   },
   {
     name: "Project 2",
     image: Proj2,
-    skills: "React,Node.js,MongoDB",
+    skills: "Next, TypesScript",
   },
   {
     name: "Project 3",
     image: Proj3,
-    skills: "React,Node.js,MongoDB,SpotifyAPI",
+    skills: "React, JavaScript, Pokemon API",
   },
   {
     name: "Project 4",
@@ -34,6 +34,6 @@ export const ProjectList = [
   {
     name: "Project 6",
     image: Proj6,
-    skills: "React Native,JavaScript,HTML,CSS",
+    skills: "React, React Carousel, TypeScript, HTML,CSS",
   },
 ];

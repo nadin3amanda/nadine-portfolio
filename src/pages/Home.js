@@ -1,5 +1,22 @@
 import React from "react";
 import "../styles/Home.css";
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3,
+  FaSass,
+  FaJs,
+  FaNodeJs,
+  FaNpm,
+  FaGit,
+  FaGithub,
+  FaCode,
+  FaWordpress,
+  FaWindows,
+  FaApple,
+  FaElementor,
+  FaYarn,
+} from "react-icons/fa";
 
 function Home() {
   return (
@@ -17,19 +34,22 @@ function Home() {
         <h1> Skills</h1>
         <ol className="list">
           <li className="item">
-            <h2> Front-End</h2>
-            <span>
-              ReactJS, HTML, CSS, React Native, Flutter, NPM,Next, BootStrap,
-              MaterialUI, Yarn, TailwindCSS, StyledComponents
-            </span>
+            <FaReact />
+            <FaHtml5 />
+            <FaCss3 />
+            <FaSass />
+            <FaJs />
+            <FaNodeJs />
+            <FaNpm />
+            <FaYarn />
+            <FaGit /> <FaGithub /> <FaCode />
           </li>
           <li className="item">
-            <h2>Back-End</h2>
-            <span>NodeJS, GraphQL</span>
+            <FaWindows />
+            <FaApple />
           </li>
           <li className="item">
-            <h2>Languages</h2>
-            <span>JavaScript, TypeScript, Go</span>
+            <FaWordpress /> <FaElementor />
           </li>
         </ol>
       </div>

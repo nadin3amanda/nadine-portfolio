@@ -16,6 +16,9 @@ import {
   FaApple,
   FaElementor,
   FaYarn,
+  FaTrello,
+  FaTerminal,
+  FaBootstrap,
 } from "react-icons/fa";
 
 function Home() {
@@ -35,14 +38,24 @@ function Home() {
         <ol className="list">
           <li className="item">
             <FaReact />
+            {/* Next */}
             <FaHtml5 />
             <FaCss3 />
             <FaSass />
+            {/* Tailwind */}
+            {/* Styled Components */}
             <FaJs />
+            {/* Typescript */}
             <FaNodeJs />
             <FaNpm />
             <FaYarn />
-            <FaGit /> <FaGithub /> <FaCode />
+            <FaGit />
+            <FaTerminal />
+            <FaBootstrap />
+
+            <FaGithub />
+            <FaTrello />
+            <FaCode />
           </li>
           <li className="item">
             <FaWindows />
@@ -50,6 +63,9 @@ function Home() {
           </li>
           <li className="item">
             <FaWordpress /> <FaElementor />
+            {/* Canva  */}
+            {/* Photoshop  */}
+            {/* Illustrator */}
           </li>
         </ol>
       </div>

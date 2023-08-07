@@ -9,8 +9,6 @@ import { Link } from "react-router-dom";
 import nadineLogo from "../assets/brand/nadine_logo.png";
 
 function Footer() {
-  // const nadineLogo = require("../assets/brand/nadine_logo.png").default;
-
   return (
     <div className="footer">
       <div className="socialMedia">

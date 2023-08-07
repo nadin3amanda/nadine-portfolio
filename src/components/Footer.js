@@ -6,8 +6,11 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import "../styles/Footer.css";
 import { Link } from "react-router-dom";
+import nadineLogo from "../assets/brand/nadine_logo.png";
 
 function Footer() {
+  // const nadineLogo = require("../assets/brand/nadine_logo.png").default;
+
   return (
     <div className="footer">
       <div className="socialMedia">
@@ -25,7 +28,15 @@ function Footer() {
           <InstagramIcon />
         </Link>
       </div>
-      <p> &copy; 2022 nadine amanda</p>
+      <div className="copyright">
+        <img
+          src={nadineLogo}
+          alt="Nadine Amanda logo"
+          width="46px"
+          height="44px"
+        />
+        <p> &copy; 2022 nadine amanda</p>
+      </div>
     </div>
   );
 }

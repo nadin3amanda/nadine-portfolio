@@ -14,4 +14,6 @@ body {
 h1 {
   font-family: "Modak", cursive;
   font: 35px;
+  font-weight: 400;
+  letter-spacing: 1.3;
 }

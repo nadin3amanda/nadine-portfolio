@@ -34,7 +34,7 @@ function Home() {
         </div>
       </div>
       <div className="skills">
-        <h1> Skills</h1>
+        <h1> Technologies </h1>
         <ol className="list">
           <li className="item">
             <FaReact />
@@ -52,16 +52,11 @@ function Home() {
             <FaGit />
             <FaTerminal />
             <FaBootstrap />
-
             <FaGithub />
             <FaTrello />
             <FaCode />
-          </li>
-          <li className="item">
             <FaWindows />
             <FaApple />
-          </li>
-          <li className="item">
             <FaWordpress /> <FaElementor />
             {/* Canva  */}
             {/* Photoshop  */}

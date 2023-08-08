@@ -28,6 +28,18 @@
 
 /* MENU ITEM STYLING */
 
+@keyframes glowAnimation {
+  0%,
+  100% {
+    border-color: #d16ba5;
+    box-shadow: 0 0 10px #d16ba5;
+  }
+  50% {
+    border-color: #5ffbf1;
+    box-shadow: 0 0 24px #5ffbf1;
+  }
+}
+
 .projectItem {
   border-radius: 15px;
   width: 300px;
@@ -37,9 +49,11 @@
   text-align: center;
 }
 .projectItem:hover {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in;
   cursor: crosshair;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px transparent;
+  animation: glowAnimation 2s infinite;
 }
 
 .projectItem .bgImage {

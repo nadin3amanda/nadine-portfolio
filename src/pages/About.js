@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import profile1 from "../assets/brand/ai-photo.jpg";
 import profile2 from "../assets/about/nadine_and_cat.jpg";
 import profile3 from "../assets/about/nadine_as_sage.jpg";
+import { useTheme } from "../components/ThemeProvider";
 
 const AboutContainer = styled.div`
   display: flex;
@@ -23,6 +24,7 @@ const Header = styled.div`
   h1 {
     font-size: 100px;
     font-family: "Urbanist", sans-serif;
+    color: #86a8e7;
   }
   p {
     margin-top: -3vw;
@@ -90,58 +92,62 @@ const Image = styled.img`
 `;
 
 export default function About() {
+  const { theme } = useTheme();
+
   return (
-    <AboutContainer>
-      <Header>
-        <h1>Hi! I'm Nadine.</h1>
-        <p>
-          A creative Front End Developer with a passion for learning and
-          designing.
-        </p>
-      </Header>
-      <Column>
-        <ColumnInfo>
-          I am self-taught developer with over 6 years of experience in
-          building, designing, and maintaining websites, and a total work
-          experience of over a decade in multicultural settings. Always
-          passionate about learning something new and being able to provide
-          solutions to problems.
-        </ColumnInfo>
-        <Image src={profile1} alt="Profile" style={{ marginTop: "50px" }} />
-        <ColumnInfo>
-          I have a very unconventional work background which I am grateful for
-          because it contributed a lot to my work ethic. Commencing as Technical
-          Support Representative, I learned the art of communication and
-          adapting to a multicultural environment. As a Customer Insight
-          Consultant, I mastered quality assurance and the strategic use of
-          customer data. Progressing to an Executive Assistant, I engaged with
-          prestigious brands, all while nurturing my skills in Web Design and
-          Front-End Development.
-        </ColumnInfo>
-      </Column>
-      <Column>
-        <Image src={profile2} alt="Profile" />
-        <ColumnInfo>
-          My skills that possibly be relevant for your projects are HTML/5,
-          CSS/3, SCSS, Javascript, Typescript, Jquery, React, NextJS, Styled
-          Components, Microsoft Visual Studio Code, Git, GitHub, Linux, Ubuntu,
-          iTerm 2, WordPress, Elementor, Microsoft Office, Google Suite, Adobe
-          Photoshop, Adobe Illustrator, Figma, Canva.
-        </ColumnInfo>
-        <Image
-          src={profile3}
-          alt="Work Experience"
-          style={{ marginTop: "50px", marginBottom: "50px" }}
-        />
-        <ColumnInfo>
-          Amidst this voyage, I maintained a steadfast dedication to my craft as
-          a Web Designer and Front-End Developer, a pursuit that has kept my
-          skills vibrant and nurtures a dream to make it a compass for my future
-          path. May my humble journey stand as a testament to the power of
-          growth, embracing the unexpected, and the unwavering dedication to the
-          artistry of progress.
-        </ColumnInfo>
-      </Column>
-    </AboutContainer>
+    <div className={theme}>
+      <AboutContainer>
+        <Header>
+          <h1>Hi! I'm Nadine.</h1>
+          <p>
+            A creative Front End Developer with a passion for learning and
+            designing.
+          </p>
+        </Header>
+        <Column>
+          <ColumnInfo>
+            I am self-taught developer with over 6 years of experience in
+            building, designing, and maintaining websites, and a total work
+            experience of over a decade in multicultural settings. Always
+            passionate about learning something new and being able to provide
+            solutions to problems.
+          </ColumnInfo>
+          <Image src={profile1} alt="Profile" style={{ marginTop: "50px" }} />
+          <ColumnInfo>
+            I have a very unconventional work background which I am grateful for
+            because it contributed a lot to my work ethic. Commencing as
+            Technical Support Representative, I learned the art of communication
+            and adapting to a multicultural environment. As a Customer Insight
+            Consultant, I mastered quality assurance and the strategic use of
+            customer data. Progressing to an Executive Assistant, I engaged with
+            prestigious brands, all while nurturing my skills in Web Design and
+            Front-End Development.
+          </ColumnInfo>
+        </Column>
+        <Column>
+          <Image src={profile2} alt="Profile" />
+          <ColumnInfo>
+            My skills that possibly be relevant for your projects are HTML/5,
+            CSS/3, SCSS, Javascript, Typescript, Jquery, React, NextJS, Styled
+            Components, Microsoft Visual Studio Code, Git, GitHub, Linux,
+            Ubuntu, iTerm 2, WordPress, Elementor, Microsoft Office, Google
+            Suite, Adobe Photoshop, Adobe Illustrator, Figma, Canva.
+          </ColumnInfo>
+          <Image
+            src={profile3}
+            alt="Work Experience"
+            style={{ marginTop: "50px", marginBottom: "50px" }}
+          />
+          <ColumnInfo>
+            Amidst this voyage, I maintained a steadfast dedication to my craft
+            as a Web Designer and Front-End Developer, a pursuit that has kept
+            my skills vibrant and nurtures a dream to make it a compass for my
+            future path. May my humble journey stand as a testament to the power
+            of growth, embracing the unexpected, and the unwavering dedication
+            to the artistry of progress.
+          </ColumnInfo>
+        </Column>
+      </AboutContainer>
+    </div>
   );
 }

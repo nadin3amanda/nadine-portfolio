@@ -1,29 +1,37 @@
 import React from "react";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from "@material-ui/icons/GitHub";
 import "../styles/Footer.css";
 import { Link } from "react-router-dom";
 import nadineLogo from "../assets/brand/nadine_logo.png";
+import {
+  FaCoffee,
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
 
 function Footer() {
   return (
     <div className="footer">
       <div className="socialMedia">
-        <FacebookIcon />
+        <Link to="https://www.fb.me/nadineamandaortega/">
+          <FaFacebook />
+        </Link>
         <Link to="https://www.linkedin.com/in/nadine-amanda-ortega/">
-          <LinkedInIcon />
+          <FaLinkedin />
         </Link>
         <Link to="https://github.com/nadin3amanda">
-          <GitHubIcon />
+          <FaGithub />
         </Link>
         <Link to="https://twitter.com/nadin3amanda/">
-          <TwitterIcon />
+          <FaTwitter />
         </Link>
         <Link to="https://instagram.com/nadineplays/">
-          <InstagramIcon />
+          <FaInstagram />
+        </Link>
+        <Link to="https://buymeacoffee.com/nadineamanda">
+          <FaCoffee />
         </Link>
       </div>
       <div className="copyright">

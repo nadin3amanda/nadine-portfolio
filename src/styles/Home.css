@@ -74,10 +74,10 @@
   letter-spacing: 1.5;
 }
 
-/* .skills .list {
+.skills .list {
   list-style: none;
   width: 60%;
-} */
+}
 
 .list span {
   font-size: 20px;

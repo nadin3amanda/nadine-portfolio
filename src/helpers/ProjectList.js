@@ -7,32 +7,32 @@ import Proj6 from "../assets/project6-landing.png";
 
 export const ProjectList = [
   {
-    name: "Project 1",
+    name: "Crypto App",
     image: Proj1,
     skills: "React, TypeScript, CSS, Styled components",
   },
   {
-    name: "Project 2",
+    name: "NextJs Blog Site",
     image: Proj2,
     skills: "Next, TypesScript",
   },
   {
-    name: "Project 3",
+    name: "Pokedex",
     image: Proj3,
     skills: "React, JavaScript, Pokemon API",
   },
   {
-    name: "Project 4",
+    name: "New Artist Download Card",
     image: Proj4,
     skills: "React,Node.js,MySQL,GraphQL",
   },
   {
-    name: "Project 5",
+    name: "Gaming Stats Layout",
     image: Proj5,
     skills: "JavaScript,HTML,CSS",
   },
   {
-    name: "Project 6",
+    name: "Digital Atlas Landing Page",
     image: Proj6,
     skills: "React, React Carousel, TypeScript, HTML,CSS",
   },

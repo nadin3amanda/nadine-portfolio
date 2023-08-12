@@ -1,8 +1,6 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
-function ProjectItem({ image, name, id, skills }) {
-  const navigate = useNavigate();
+function ProjectItem({ image, name, id, skills, link }) {
   const [isHovered, setIsHovered] = React.useState(false);
 
   const handleMouseEnter = () => {
@@ -14,18 +12,18 @@ function ProjectItem({ image, name, id, skills }) {
   };
 
   return (
-    <div
+    <a
       className="projectItem"
-      // onClick={() => {
-      //   navigate("/project/" + id);
-      // }}
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
       <h1> {name} </h1>
       {isHovered && <div className="skills">{skills}</div>}
-    </div>
+    </a>
   );
 }
 

@@ -22,6 +22,7 @@ function Projects() {
                 name={project.name}
                 image={project.image}
                 skills={project.skills}
+                link={project.link}
               />
             );
           })}

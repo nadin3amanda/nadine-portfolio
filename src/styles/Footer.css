@@ -28,7 +28,15 @@
   color: white;
   margin: 9px;
   font-size: 28px;
-  cursor: crosshair;
+}
+
+.socialMedia svg:hover,
+.socialMedia svg:focus {
+  color: #ffe5d9;
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.25em);
+  transition: 0.3s ease-out;
+  cursor: pointer;
 }
 
 .footer p {

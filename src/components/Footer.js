@@ -41,7 +41,7 @@ function Footer() {
           width="46px"
           height="44px"
         />
-        <p> &copy; 2024 nadine amanda</p>
+        <p>designed and coded by nadine amanda &copy; 2024</p>
       </div>
     </div>
   );

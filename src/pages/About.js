@@ -52,7 +52,7 @@ const Column = styled.div`
 
 const ColumnInfo = styled.div`
   width: 20vw;
-  height: 20vh;
+  height: auto;
   text-align: start;
   font-size: 18px;
   line-height: 1.7;
@@ -92,6 +92,11 @@ const Image = styled.img`
   }
 `;
 
+const InfoContainer = styled.div`
+  margin: 12px auto;
+  padding: 6px;
+`;
+
 export default function About() {
   const { theme } = useTheme();
 
@@ -106,61 +111,67 @@ export default function About() {
           </p>
         </Header>
         <Column>
-          <ColumnInfo>
-            I am self-taught developer with over 6 years of experience in
-            building, designing, and maintaining websites, and a total work
-            experience of over a decade in multicultural settings. Always
-            passionate about learning something new and being able to provide
-            solutions to problems.
-          </ColumnInfo>
-          <Image src={profile1} alt="Profile" style={{ marginTop: "50px" }} />
-          <ColumnInfo>
-            I have a very unconventional work background which I am grateful for
-            because it contributed a lot to my work ethic. Commencing as
-            Technical Support Representative, I learned the art of communication
-            and adapting to a multicultural environment. As a Customer Insight
-            Consultant, I mastered quality assurance and the strategic use of
-            customer data. Progressing to an Executive Assistant, I engaged with
-            prestigious brands, all while nurturing my skills in Web Design and
-            Front-End Development.
-          </ColumnInfo>
-          <Image
-            src={profile4}
-            alt="Personal"
-            style={{ marginTop: "50px", marginBottom: "50px" }}
-          />
-          <ColumnInfo>
-            I am a mom of 2 humans and 4 felines. I'm as hooked on iced coffee
-            as I am playing my video games. Given a bit more room, you'll find
-            me lost in the pages of a good book. My podcast preferences? Let's
-            just say I effortlessly pivot from personal growth to unraveling
-            enigmatic crimes. As for my digital diet, it spans from skincare
-            revelations to intergalactic dwelling revelations, because who
-            doesn't love a good mystery, whether on Earth or beyond?
-          </ColumnInfo>
+          <InfoContainer>
+            <ColumnInfo>
+              I am self-taught developer with over 6 years of experience in
+              building, designing, and maintaining websites, and a total work
+              experience of over a decade in multicultural settings. Always
+              passionate about learning something new and being able to provide
+              solutions to problems.
+            </ColumnInfo>
+            <Image src={profile1} alt="Profile" style={{ marginTop: "50px" }} />
+            <ColumnInfo>
+              I have a very unconventional work background which I am grateful
+              for because it contributed a lot to my work ethic. Commencing as
+              Technical Support Representative, I learned the art of
+              communication and adapting to a multicultural environment. As a
+              Customer Insight Consultant, I mastered quality assurance and the
+              strategic use of customer data. Progressing to an Executive
+              Assistant, I engaged with prestigious brands, all while nurturing
+              my skills in Web Design and Front-End Development.
+            </ColumnInfo>
+          </InfoContainer>
+          <InfoContainer>
+            <Image
+              src={profile4}
+              alt="Personal"
+              style={{ marginTop: "50px", marginBottom: "50px" }}
+            />
+            <ColumnInfo>
+              I am a mom of 2 humans and 4 felines. I'm as hooked on iced coffee
+              as I am playing my video games. Given a bit more room, you'll find
+              me lost in the pages of a good book. My podcast preferences? Let's
+              just say I effortlessly pivot from personal growth to unraveling
+              enigmatic crimes. As for my digital diet, it spans from skincare
+              revelations to intergalactic dwelling revelations, because who
+              doesn't love a good mystery, whether on Earth or beyond?
+            </ColumnInfo>
+          </InfoContainer>
         </Column>
         <Column>
-          <Image src={profile2} alt="Profile" />
-          <ColumnInfo>
-            My skills that possibly be relevant for your projects are HTML/5,
-            CSS/3, SCSS, Javascript, Typescript, Jquery, React, NextJS, Styled
-            Components, Microsoft Visual Studio Code, Git, GitHub, Linux,
-            Ubuntu, iTerm 2, WordPress, Elementor, Microsoft Office, Google
-            Suite, Adobe Photoshop, Adobe Illustrator, Figma, Canva.
-          </ColumnInfo>
-          <Image
-            src={profile3}
-            alt="Work Experience"
-            style={{ marginTop: "50px", marginBottom: "50px" }}
-          />
-          <ColumnInfo>
-            Amidst this voyage, I maintained a steadfast dedication to my craft
-            as a Web Designer and Front-End Developer, a pursuit that has kept
-            my skills vibrant and nurtures a dream to make it a compass for my
-            future path. May my humble journey stand as a testament to the power
-            of growth, embracing the unexpected, and the unwavering dedication
-            to the artistry of progress.
-          </ColumnInfo>
+          <InfoContainer>
+            <Image src={profile2} alt="Profile" />
+            <ColumnInfo>
+              My skills that possibly be relevant for your projects are HTML/5,
+              CSS/3, SCSS, Javascript, Typescript, Jquery, React, NextJS, Styled
+              Components, Microsoft Visual Studio Code, Git, GitHub, Linux,
+              Ubuntu, iTerm 2, WordPress, Elementor, Microsoft Office, Google
+              Suite, Adobe Photoshop, Adobe Illustrator, Figma, Canva.
+            </ColumnInfo>
+            <Image
+              src={profile3}
+              alt="Work Experience"
+              style={{ marginTop: "50px", marginBottom: "50px" }}
+            />
+            <ColumnInfo>
+              Amidst this voyage, I maintained a steadfast dedication to my
+              craft as a Web Designer and Front-End Developer, a pursuit that
+              has kept my skills vibrant and nurtures a dream to make it a
+              compass for my future path. May my humble journey stand as a
+              testament to the power of growth, embracing the unexpected, and
+              the unwavering dedication to the artistry of progress.
+            </ColumnInfo>
+          </InfoContainer>
         </Column>
       </AboutContainer>
     </div>

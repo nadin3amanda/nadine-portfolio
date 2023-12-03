@@ -4,6 +4,7 @@ import Proj3 from "../assets/project3-pokemon.PNG";
 import Proj4 from "../assets/project4-giane.PNG";
 import Proj5 from "../assets/project5-gaming.PNG";
 import Proj6 from "../assets/project6-landing.png";
+import Proj7 from "../assets/project7-valorant.PNG";
 
 export const ProjectList = [
   {
@@ -41,5 +42,12 @@ export const ProjectList = [
     image: Proj6,
     skills: "React, React Carousel, TypeScript, HTML,CSS",
     link: "https://soar.earth",
+  },
+
+  {
+    name: "Valorant Agent Generator",
+    image: Proj7,
+    skills: "React, Javascript, HTML,CSS",
+    link: "https://valorant-agent-generator-v3.vercel.app/",
   },
 ];

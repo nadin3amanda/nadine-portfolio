@@ -12,6 +12,22 @@ body {
   font-family: "Urbanist", sans-serif;
 }
 
+body::-webkit-scrollbar-track {
+  background: linear-gradient(
+    -225deg,
+    rgb(118, 224, 231) 0%,
+    rgba(20, 40, 90, 1) 29%,
+    rgb(167, 77, 152) 67%,
+    rgba(20, 40, 90, 1) 100%
+  );
+}
+
+body::-webkit-scrollbar-thumb {
+  background: transparent;
+  box-shadow: 0px 0px 0px 100000vh black;
+  border-radius: 20px;
+}
+
 h1 {
   font: 35px;
   font-weight: 400;

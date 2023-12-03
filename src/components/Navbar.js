@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import "../styles/Navbar.css";
 import Reorder from "@material-ui/icons/Reorder";
+import React, { useEffect, useState } from "react";
 import { FaMoon } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "../components/ThemeProvider";
+import "../styles/Navbar.css";
 
 function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
@@ -12,7 +12,7 @@ function Navbar() {
     setExpandNavbar(false);
   }, [location]);
 
-  const { theme, handleThemeSwitch } = useTheme();
+  const { handleThemeSwitch } = useTheme();
 
   return (
     <div className="navbar" id={expandNavbar ? "open" : "close"}>
@@ -27,9 +27,9 @@ function Navbar() {
       </div>
       <div className="links">
         <Link to="/">Home</Link>
-        <Link to="/projects">Projects</Link>
+        <Link to="/projects">Work</Link>
         <Link to="/about">About</Link>
-        <FaMoon onClick={handleThemeSwitch} />
+        <FaMoon onClick={handleThemeSwitch} className="cursor-pointer" />
       </div>
     </div>
   );

@@ -1,8 +1,9 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import profile1 from "../assets/brand/ai-photo.jpg";
+import profile4 from "../assets/about/nadine-anime-girl.png";
 import profile2 from "../assets/about/nadine_and_cat.jpg";
 import profile3 from "../assets/about/nadine_as_sage.jpg";
+import profile1 from "../assets/brand/ai-photo.jpg";
 import { useTheme } from "../components/ThemeProvider";
 
 const AboutContainer = styled.div`
@@ -122,6 +123,20 @@ export default function About() {
             customer data. Progressing to an Executive Assistant, I engaged with
             prestigious brands, all while nurturing my skills in Web Design and
             Front-End Development.
+          </ColumnInfo>
+          <Image
+            src={profile4}
+            alt="Personal"
+            style={{ marginTop: "50px", marginBottom: "50px" }}
+          />
+          <ColumnInfo>
+            I am a mom of 2 humans and 4 felines. I'm as hooked on iced coffee
+            as I am playing my video games. Given a bit more room, you'll find
+            me lost in the pages of a good book. My podcast preferences? Let's
+            just say I effortlessly pivot from personal growth to unraveling
+            enigmatic crimes. As for my digital diet, it spans from skincare
+            revelations to intergalactic dwelling revelations, because who
+            doesn't love a good mystery, whether on Earth or beyond?
           </ColumnInfo>
         </Column>
         <Column>

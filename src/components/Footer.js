@@ -1,7 +1,4 @@
 import React from "react";
-import "../styles/Footer.css";
-import { Link } from "react-router-dom";
-import nadineLogo from "../assets/brand/nadine_logo.png";
 import {
   FaCoffee,
   FaFacebook,
@@ -10,6 +7,9 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import nadineLogo from "../assets/brand/nadine_logo.png";
+import "../styles/Footer.css";
 
 function Footer() {
   return (
@@ -41,7 +41,7 @@ function Footer() {
           width="46px"
           height="44px"
         />
-        <p> &copy; 2022 nadine amanda</p>
+        <p> &copy; 2024 nadine amanda</p>
       </div>
     </div>
   );

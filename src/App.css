@@ -63,7 +63,20 @@ h5 {
 }
 /* Technologies */
 .all-tools {
-  padding: 20px;
+  width: 100vw;
+  padding: 10px;
+  margin-top: -2vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 20px;
+}
+
+.tools-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
 }
 
 .tools-grid {
@@ -73,28 +86,22 @@ h5 {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-.tools-col {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: aqua;
-}
-.tools {
-  display: grid;
-  grid-template-rows: repeat(9, auto);
-  gap: 10px;
+  width: 100%;
 }
 
-.tools-dev {
-  /* icons only*/
+.tools-dev,
+.tools-design {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
-  gap: 10px;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
 }
 
 .tools h5 {
   grid-column: span 3;
+  text-align: center;
   margin-bottom: 10px;
 }

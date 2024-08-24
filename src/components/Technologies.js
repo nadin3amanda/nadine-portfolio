@@ -38,8 +38,8 @@ function Technologies() {
       <div className="all-tools">
         <div className="tools-col">
           <h5>Development</h5>
-          <ol className="tools-grid">
-            <li className="tools-dev">
+          <div className="tools-grid">
+            <div className="tools-dev">
               <FaCode title="Code" />
               <FaReact title="React" />
               <RiNextjsFill title="Next.js" />
@@ -58,24 +58,24 @@ function Technologies() {
               <FaBootstrap title="Bootstrap" />
               <FaWordpress title="WordPress" />
               <FaElementor title="Elementor" />
-            </li>
-          </ol>
+            </div>
+          </div>
         </div>
         <div className="tools-col">
           <h5>Design</h5>
-          <ol className="tools-grid">
-            <li className="tools-design">
+          <div className="tools-grid">
+            <div className="tools-design">
               <FaFigma title="Figma" />
               <DiPhotoshop title="Photoshop" />
               <DiIllustrator title="Illustrator" />
               <SiCanva title="Canva" />
-            </li>
-          </ol>
+            </div>
+          </div>
         </div>
         <div className="tools-col">
           <h5>Workspace & Others</h5>
-          <ol className="tools-grid">
-            <li className="tools-design">
+          <div className="tools-grid">
+            <div className="tools-design">
               <SiMiro title="Miro" />
               <SiClickup title="ClickUp" />
               <FaGithub title="GitHub" />
@@ -83,8 +83,8 @@ function Technologies() {
               <SiAsana title="Asana" />
               <FaWindows title="Windows" />
               <FaApple title="Apple" />
-            </li>
-          </ol>
+            </div>
+          </div>
         </div>
       </div>
     </div>

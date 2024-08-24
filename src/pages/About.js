@@ -1,16 +1,15 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import profile4 from "../assets/about/nadine-anime-girl.png";
 import profile2 from "../assets/about/nadine_and_cat.jpg";
 import profile3 from "../assets/about/nadine_as_sage.jpg";
 import profile1 from "../assets/brand/ai-photo.jpg";
 import { useTheme } from "../components/ThemeProvider";
-
 const AboutContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 60vw;
+  width: 52vw;
   margin: 0 auto;
+  padding: 0;
 
   @media only screen and (max-width: 600px) {
     width: 100vw;
@@ -18,14 +17,17 @@ const AboutContainer = styled.div`
 `;
 
 const Header = styled.div`
-  display: flex;
-  flex-direction: column;
+  padding: 0;
+  margin: 0 auto;
+  display: block;
   width: 90%;
 
   h1 {
     font-size: 100px;
     font-family: "Urbanist", sans-serif;
     color: #86a8e7;
+    padding: 0;
+    margin-top: 1rem;
   }
   p {
     margin-top: -3vw;
@@ -93,7 +95,7 @@ const Image = styled.img`
 `;
 
 const InfoContainer = styled.div`
-  margin: 12px auto;
+  margin: 0px auto;
   padding: 6px;
 `;
 
@@ -104,64 +106,52 @@ export default function About() {
     <div className={theme}>
       <AboutContainer>
         <Header>
-          <h1>Hi! I'm Nadine.</h1>
+          <h1>Hi there, I'm Nadine</h1>
           <p>
-            A creative Front End Developer with a passion for learning and
-            designing.
+            <span style={{ fontFamily: "VT323, monospace", fontSize: "38px" }}>
+              Pixel Perfectionist&nbsp;
+            </span>
+            & <em>Your Go-To UI/UX Alchemist</em>.
           </p>
         </Header>
         <Column>
           <InfoContainer>
             <ColumnInfo>
-              I am self-taught developer with over 6 years of experience in
-              building, designing, and maintaining websites, and a total work
-              experience of over a decade in multicultural settings. Always
-              passionate about learning something new and being able to provide
-              solutions to problems.
+              Self-Taught Developer with 7+ Years of Crafting Websites and a
+              Decade of Multicultural Experience—Passionate About Learning,
+              Solving Problems, and Making the Web a Better Place, One Pixel at
+              a Time!
+              <br />
+              <br />
+              If it’s on the web, I’ve probably designed, developed, or debugged
+              it!
             </ColumnInfo>
             <Image src={profile1} alt="Profile" style={{ marginTop: "50px" }} />
             <ColumnInfo>
-              I have a very unconventional work background which I am grateful
-              for because it contributed a lot to my work ethic. Commencing as
-              Technical Support Representative, I learned the art of
-              communication and adapting to a multicultural environment. As a
-              Customer Insight Consultant, I mastered quality assurance and the
-              strategic use of customer data. Progressing to an Executive
-              Assistant, I engaged with prestigious brands, all while nurturing
-              my skills in Web Design and Front-End Development.
+              Throughout my journey, I've stayed passionately dedicated to web
+              design and front-end development, keeping my skills sharp and
+              fueling my dream to chart a future in this field. My story is a
+              testament to growth, embracing the unexpected, and the unwavering
+              commitment to the art of progress.
             </ColumnInfo>
-          </InfoContainer>
-          <InfoContainer>
-            <Image
-              src={profile4}
-              alt="Personal"
-              style={{ marginTop: "50px", marginBottom: "50px" }}
-            />
           </InfoContainer>
         </Column>
         <Column>
           <InfoContainer>
             <Image src={profile2} alt="Profile" />
             <ColumnInfo>
-              My skills that possibly be relevant for your projects are HTML/5,
-              CSS/3, SCSS, Javascript, Typescript, Jquery, React, NextJS, Styled
-              Components, Microsoft Visual Studio Code, Git, GitHub, Linux,
-              Ubuntu, iTerm 2, WordPress, Elementor, Microsoft Office, Google
-              Suite, Adobe Photoshop, Adobe Illustrator, Figma, Canva.
+              My unconventional journey—from Technical Support to Customer
+              Insight Consultant, and finally to Executive Assistant—has shaped
+              my work ethic and honed my skills. I’ve mastered communication,
+              quality assurance, and the art of adapting to diverse
+              environments. Now, I’m channeling all those experiences into
+              crafting exceptional web designs and front-end solutions.
             </ColumnInfo>
             <Image
               src={profile3}
               alt="Work Experience"
-              style={{ marginTop: "50px", marginBottom: "50px" }}
+              style={{ marginTop: "10px", marginBottom: "10px" }}
             />
-            <ColumnInfo>
-              Amidst this voyage, I maintained a steadfast dedication to my
-              craft as a Web Designer and Front-End Developer, a pursuit that
-              has kept my skills vibrant and nurtures a dream to make it a
-              compass for my future path. May my humble journey stand as a
-              testament to the power of growth, embracing the unexpected, and
-              the unwavering dedication to the artistry of progress.
-            </ColumnInfo>
           </InfoContainer>
         </Column>
       </AboutContainer>

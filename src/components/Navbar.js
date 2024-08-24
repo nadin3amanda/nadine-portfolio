@@ -1,7 +1,7 @@
-import Reorder from "@material-ui/icons/Reorder";
 import React, { useEffect, useState } from "react";
 import { FaMoon } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
+import nadineLogo from "../assets/brand/nadine_logo.png";
 import { useTheme } from "../components/ThemeProvider";
 import "../styles/Navbar.css";
 
@@ -16,14 +16,13 @@ function Navbar() {
 
   return (
     <div className="navbar" id={expandNavbar ? "open" : "close"}>
-      <div className="toggleButton">
-        <button
-          onClick={() => {
-            setExpandNavbar((prev) => !prev);
-          }}
-        >
-          <Reorder />
-        </button>
+      <div className="logo">
+        <img
+          src={nadineLogo}
+          alt="Nadine Amanda logo"
+          width="76px"
+          height="74px"
+        />
       </div>
       <div className="links">
         <Link to="/" className={location.pathname === "/" ? "active" : ""}>

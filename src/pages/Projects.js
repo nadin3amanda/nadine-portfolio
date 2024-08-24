@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectItem from "../components/ProjectItem";
+import Technologies from "../components/Technologies";
 import { useTheme } from "../components/ThemeProvider";
 import { ProjectList } from "../helpers/ProjectList";
 import "../styles/Projects.css";
@@ -40,6 +41,7 @@ function Projects() {
             );
           })}
         </div>
+        <Technologies />
       </div>
     </div>
   );

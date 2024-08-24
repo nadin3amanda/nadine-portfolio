@@ -40,44 +40,52 @@ function Technologies() {
           <h5>Development</h5>
           <ol className="tools-grid">
             <li className="tools-dev">
-              <FaCode />
-              <FaReact />
-              <RiNextjsFill />
-              <FaHtml5 />
-              <FaCss3 />
-              <FaSass />
-              <RiTailwindCssLine />
-              <SiStyledcomponents />
-              <FaJs />
-              <SiTypescript />
-              <FaNodeJs />
-              <FaNpm />
-              <FaYarn />
-              <FaGit />
-              <FaTerminal />
-              <FaBootstrap />
-              <FaWordpress />
-              <FaElementor />
+              <FaCode title="Code" />
+              <FaReact title="React" />
+              <RiNextjsFill title="Next.js" />
+              <FaHtml5 title="HTML5" />
+              <FaCss3 title="CSS3" />
+              <FaSass title="Sass" />
+              <RiTailwindCssLine title="Tailwind CSS" />
+              <SiStyledcomponents title="Styled Components" />
+              <FaJs title="JavaScript" />
+              <SiTypescript title="TypeScript" />
+              <FaNodeJs title="Node.js" />
+              <FaNpm title="NPM" />
+              <FaYarn title="Yarn" />
+              <FaGit title="Git" />
+              <FaTerminal title="Terminal" />
+              <FaBootstrap title="Bootstrap" />
+              <FaWordpress title="WordPress" />
+              <FaElementor title="Elementor" />
             </li>
           </ol>
         </div>
-        <li className="tools">
+        <div className="tools-col">
           <h5>Design</h5>
-          <FaFigma />
-          <DiPhotoshop />
-          <DiIllustrator />
-          <SiCanva />
-        </li>
-        <li className="tools">
+          <ol className="tools-grid">
+            <li className="tools-design">
+              <FaFigma title="Figma" />
+              <DiPhotoshop title="Photoshop" />
+              <DiIllustrator title="Illustrator" />
+              <SiCanva title="Canva" />
+            </li>
+          </ol>
+        </div>
+        <div className="tools-col">
           <h5>Workspace & Others</h5>
-          <SiMiro />
-          <SiClickup />
-          <FaGithub />
-          <FaTrello />
-          <SiAsana />
-          <FaWindows />
-          <FaApple />
-        </li>
+          <ol className="tools-grid">
+            <li className="tools-design">
+              <SiMiro title="Miro" />
+              <SiClickup title="ClickUp" />
+              <FaGithub title="GitHub" />
+              <FaTrello title="Trello" />
+              <SiAsana title="Asana" />
+              <FaWindows title="Windows" />
+              <FaApple title="Apple" />
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
   );

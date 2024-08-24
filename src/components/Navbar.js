@@ -26,9 +26,21 @@ function Navbar() {
         </button>
       </div>
       <div className="links">
-        <Link to="/">Home</Link>
-        <Link to="/projects">Work</Link>
-        <Link to="/about">About</Link>
+        <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+          Home
+        </Link>
+        <Link
+          to="/projects"
+          className={location.pathname === "/projects" ? "active" : ""}
+        >
+          Work
+        </Link>
+        <Link
+          to="/about"
+          className={location.pathname === "/about" ? "active" : ""}
+        >
+          About
+        </Link>
         <FaMoon onClick={handleThemeSwitch} className="cursor-pointer" />
       </div>
     </div>

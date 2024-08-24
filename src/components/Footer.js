@@ -41,7 +41,7 @@ function Footer() {
           width="46px"
           height="44px"
         />
-        <p>designed and coded by nadine amanda &copy; 2024</p>
+        <span>designed and coded by nadine amanda &copy; 2024</span>
       </div>
     </div>
   );

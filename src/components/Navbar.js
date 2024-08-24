@@ -17,12 +17,14 @@ function Navbar() {
   return (
     <div className="navbar" id={expandNavbar ? "open" : "close"}>
       <div className="logo">
-        <img
-          src={nadineLogo}
-          alt="Nadine Amanda logo"
-          width="76px"
-          height="74px"
-        />
+        <Link to="/">
+          <img
+            src={nadineLogo}
+            alt="Nadine Amanda logo"
+            width="76px"
+            height="74px"
+          />
+        </Link>
       </div>
       <div className="links">
         <Link to="/" className={location.pathname === "/" ? "active" : ""}>

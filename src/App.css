@@ -10,6 +10,7 @@ body {
   background-color: transparent;
   height: 100vh;
   font-family: "Urbanist", sans-serif;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar-track {

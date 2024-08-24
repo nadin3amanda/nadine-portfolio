@@ -1,12 +1,6 @@
 import React from "react";
-import {
-  FaCoffee,
-  FaFacebook,
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaCoffee, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaThreads } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import nadineLogo from "../assets/brand/nadine_logo.png";
 import "../styles/Footer.css";
@@ -15,17 +9,14 @@ function Footer() {
   return (
     <div className="footer">
       <div className="socialMedia">
-        <Link to="https://www.fb.me/nadineamandaortega/">
-          <FaFacebook />
-        </Link>
         <Link to="https://www.linkedin.com/in/nadine-amanda-ortega/">
           <FaLinkedin />
         </Link>
         <Link to="https://github.com/nadin3amanda">
           <FaGithub />
         </Link>
-        <Link to="https://twitter.com/nadin3amanda/">
-          <FaTwitter />
+        <Link to="https://threads.net/@nadineplays">
+          <FaThreads />
         </Link>
         <Link to="https://instagram.com/nadineplays/">
           <FaInstagram />

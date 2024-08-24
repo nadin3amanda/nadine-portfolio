@@ -34,7 +34,7 @@ import {
 function Technologies() {
   return (
     <div className="skills">
-      <h3>Technologies</h3>
+      <h4>Technologies</h4>
       <div className="all-tools">
         <div className="tools-col">
           <h5>Development</h5>

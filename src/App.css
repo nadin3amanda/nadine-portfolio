@@ -64,7 +64,7 @@ h5 {
 }
 /* Technologies */
 .all-tools {
-  width: 100vw;
+  width: 55vw;
   padding: 10px;
   margin-top: -2vw;
   display: grid;
@@ -76,8 +76,10 @@ h5 {
 .tools-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 300px;
+  text-align: center;
+  width: 20vw;
+  padding: 10px;
+  margin: 0 auto;
 }
 
 .tools-grid {
@@ -85,19 +87,21 @@ h5 {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
 }
 
-.tools-dev,
 .tools-design {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
   gap: 20px;
-  justify-items: center;
-  align-items: center;
+  width: 100%;
+}
+
+.tools-dev {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
   width: 100%;
 }
 

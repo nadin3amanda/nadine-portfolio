@@ -44,11 +44,13 @@
   font-size: 80px;
   color: #d16ba5;
   height: 50px;
+  margin-top: -5rem;
 }
 
 .about .prompt {
   width: 40%;
   font-size: 30px;
+  margin-top: -2rem;
 }
 .prompt svg {
   font-size: 60px;

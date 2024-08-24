@@ -8,22 +8,35 @@ import Proj7 from "../assets/project7-valorant.PNG";
 
 export const ProjectList = [
   {
+    name: "Digital Atlas Landing Page",
+    image: Proj6,
+    skills: "React, React Carousel, TypeScript, HTML,CSS",
+    link: "https://soar.earth",
+  },
+
+  {
+    name: "Valorant Agent Generator",
+    image: Proj7,
+    skills: "React, Javascript, HTML,CSS",
+    link: "https://valorant-agent-generator-v3.vercel.app/",
+  },
+  {
     name: "Crypto App",
     image: Proj1,
     skills: "React, TypeScript, CSS, Styled components, Coin Gecko API",
     link: "https://crypto-app-rho-five.vercel.app/",
   },
   {
-    name: "NextJs Blog Site",
-    image: Proj2,
-    skills: "Next, TypesScript",
-    link: "https://nextjs-blog-nadin3amanda.vercel.app/",
-  },
-  {
     name: "Pokedex",
     image: Proj3,
     skills: "React, JavaScript, Pokemon API",
     link: "https://nadin3amanda.github.io/pokemon-app/",
+  },
+  {
+    name: "NextJs Blog Site",
+    image: Proj2,
+    skills: "Next, TypesScript",
+    link: "https://nextjs-blog-nadin3amanda.vercel.app/",
   },
   {
     name: "New Artist Download Card",
@@ -38,16 +51,9 @@ export const ProjectList = [
     link: "https://github.com/nadin3amanda/Gaming-Stat-Page",
   },
   {
-    name: "Digital Atlas Landing Page",
-    image: Proj6,
-    skills: "React, React Carousel, TypeScript, HTML,CSS",
-    link: "https://soar.earth",
-  },
-
-  {
-    name: "Valorant Agent Generator",
-    image: Proj7,
-    skills: "React, Javascript, HTML,CSS",
-    link: "https://valorant-agent-generator-v3.vercel.app/",
+    name: "Gaming Stats Layout",
+    image: Proj5,
+    skills: "JavaScript,HTML,CSS",
+    link: "https://github.com/nadin3amanda/Gaming-Stat-Page",
   },
 ];

@@ -1,26 +1,26 @@
 import React from "react";
-import "../styles/Home.css";
 import {
-  FaReact,
-  FaHtml5,
+  FaApple,
+  FaBootstrap,
+  FaCode,
   FaCss3,
-  FaSass,
+  FaElementor,
+  FaGit,
+  FaGithub,
+  FaHtml5,
   FaJs,
   FaNodeJs,
   FaNpm,
-  FaGit,
-  FaGithub,
-  FaCode,
-  FaWordpress,
-  FaWindows,
-  FaApple,
-  FaElementor,
-  FaYarn,
-  FaTrello,
+  FaReact,
+  FaSass,
   FaTerminal,
-  FaBootstrap,
+  FaTrello,
+  FaWindows,
+  FaWordpress,
+  FaYarn,
 } from "react-icons/fa";
 import { useTheme } from "../components/ThemeProvider";
+import "../styles/Home.css";
 
 function Home() {
   const { theme } = useTheme();
@@ -36,8 +36,9 @@ function Home() {
           <h2> Hi, My Name is Nadine</h2>
           <div className="prompt">
             <p>
-              A creative Front End Developer with a passion for learning and
-              designing.
+              Pixel Perfectionist & Your Go-To UI/UX Alchemist: Crafting User
+              Experiences with a Decade of Design, Debugging, and the Iced
+              Coffee shaking.
             </p>
           </div>
         </div>

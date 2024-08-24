@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectItem from "../components/ProjectItem";
+import { useTheme } from "../components/ThemeProvider";
 import { ProjectList } from "../helpers/ProjectList";
 import "../styles/Projects.css";
-import { useTheme } from "../components/ThemeProvider";
 
 function Projects() {
   const { theme } = useTheme();
@@ -13,7 +13,20 @@ function Projects() {
       } flex justify-center items-center`}
     >
       <div className="projects">
-        <h1> My Personal Projects</h1>
+        <div className="about">
+          <h2> Hi there, I'm Nadine</h2>
+          <div className="prompt">
+            <p>
+              <span
+                style={{ fontFamily: "VT323, monospace", fontSize: "38px" }}
+              >
+                Pixel Perfectionist
+              </span>{" "}
+              & <em>Your Go-To UI/UX Alchemist</em>: Crafting User Experiences
+              with a Decade of Design, Debugging, and the Iced Coffee shaking.
+            </p>
+          </div>
+        </div>
         <div className="projectList">
           {ProjectList.map((project, idx) => {
             return (

@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import profile2 from "../assets/about/nadine_and_cat.jpg";
 import profile3 from "../assets/about/nadine_as_sage.jpg";
 import profile1 from "../assets/brand/ai-photo.jpg";
+import Technologies from "../components/Technologies";
 import { useTheme } from "../components/ThemeProvider";
 const AboutContainer = styled.div`
   display: flex;
@@ -154,6 +155,7 @@ export default function About() {
             />
           </InfoContainer>
         </Column>
+        <Technologies />
       </AboutContainer>
     </div>
   );

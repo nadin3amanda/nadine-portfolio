@@ -137,15 +137,6 @@ export default function About() {
               alt="Personal"
               style={{ marginTop: "50px", marginBottom: "50px" }}
             />
-            <ColumnInfo>
-              I am a mom of 2 humans and 4 felines. I'm as hooked on iced coffee
-              as I am playing my video games. Given a bit more room, you'll find
-              me lost in the pages of a good book. My podcast preferences? Let's
-              just say I effortlessly pivot from personal growth to unraveling
-              enigmatic crimes. As for my digital diet, it spans from skincare
-              revelations to intergalactic dwelling revelations, because who
-              doesn't love a good mystery, whether on Earth or beyond?
-            </ColumnInfo>
           </InfoContainer>
         </Column>
         <Column>

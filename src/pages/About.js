@@ -39,6 +39,14 @@ const Header = styled.div`
     margin: 0 0 5% 3%;
     align-items: center;
     text-align: start;
+
+    h1 {
+      font-size: 50px;
+      font-weight: 600;
+    }
+    p {
+      color: #3e497a;
+    }
   }
 `;
 const Column = styled.div`
@@ -66,6 +74,17 @@ const ColumnInfo = styled.div`
   @media only screen and (max-width: 600px) {
     width: 90%;
     margin: 10% 0 10% 0;
+
+    #self-taught {
+      margin-top: -8vh;
+      width: 95vw;
+      padding: 0 8px 0 8px;
+    }
+    #my-journey,
+    #last-info {
+      width: 95vw;
+      padding: 0 8px 0 8px;
+    }
   }
 `;
 
@@ -92,6 +111,8 @@ const Image = styled.img`
   @media only screen and (max-width: 600px) {
     display: block;
     margin: 0 auto;
+    width: 50vw;
+    height: auto;
   }
 `;
 
@@ -118,22 +139,26 @@ export default function About() {
         <Column>
           <InfoContainer>
             <ColumnInfo>
-              Self-Taught Developer with 7+ Years of Crafting Websites and a
-              Decade of Multicultural Experience—Passionate About Learning,
-              Solving Problems, and Making the Web a Better Place, One Pixel at
-              a Time!
-              <br />
-              <br />
-              If it’s on the web, I’ve probably designed, developed, or debugged
-              it!
+              <div id="self-taught">
+                Self-Taught Developer with 7+ Years of Crafting Websites and a
+                Decade of Multicultural Experience—Passionate About Learning,
+                Solving Problems, and Making the Web a Better Place, One Pixel
+                at a Time!
+                <br />
+                <br />
+                If it’s on the web, I’ve probably designed, developed, or
+                debugged it!
+              </div>
             </ColumnInfo>
             <Image src={profile1} alt="Profile" style={{ marginTop: "50px" }} />
             <ColumnInfo>
-              Throughout my journey, I've stayed passionately dedicated to web
-              design and front-end development, keeping my skills sharp and
-              fueling my dream to chart a future in this field. My story is a
-              testament to growth, embracing the unexpected, and the unwavering
-              commitment to the art of progress.
+              <div id="my-journey">
+                Throughout my journey, I've stayed passionately dedicated to web
+                design and front-end development, keeping my skills sharp and
+                fueling my dream to chart a future in this field. My story is a
+                testament to growth, embracing the unexpected, and the
+                unwavering commitment to the art of progress.
+              </div>
             </ColumnInfo>
           </InfoContainer>
         </Column>
@@ -141,12 +166,14 @@ export default function About() {
           <InfoContainer>
             <Image src={profile2} alt="Profile" />
             <ColumnInfo>
-              My unconventional journey—from Technical Support to Customer
-              Insight Consultant, and finally to Executive Assistant—has shaped
-              my work ethic and honed my skills. I’ve mastered communication,
-              quality assurance, and the art of adapting to diverse
-              environments. Now, I’m channeling all those experiences into
-              crafting exceptional web designs and front-end solutions.
+              <div id="last-info">
+                From Technical Support to Customer Insight Consultant, and
+                finally to Executive Assistant—has shaped my work ethic and
+                honed my skills. I’ve mastered communication, quality assurance,
+                and the art of adapting to diverse environments. Now, I’m
+                channeling all those experiences into crafting exceptional web
+                designs and front-end solutions.
+              </div>
             </ColumnInfo>
             <Image
               src={profile3}

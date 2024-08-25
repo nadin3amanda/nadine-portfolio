@@ -48,10 +48,11 @@
 }
 
 .about .prompt {
-  width: 40%;
+  width: 43vw;
   font-size: 30px;
   margin-top: -2rem;
   color: #86a8e7;
+  letter-spacing: 0.8px;
 }
 .prompt svg {
   font-size: 60px;

@@ -5,6 +5,7 @@ import profile3 from "../assets/about/nadine_as_sage.jpg";
 import profile1 from "../assets/brand/ai-photo.jpg";
 import Technologies from "../components/Technologies";
 import { useTheme } from "../components/ThemeProvider";
+
 const AboutContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -13,7 +14,8 @@ const AboutContainer = styled.div`
   padding: 0;
 
   @media only screen and (max-width: 600px) {
-    width: 100vw;
+    width: 98vw;
+    justify-content: center;
   }
 `;
 
@@ -72,18 +74,15 @@ const ColumnInfo = styled.div`
   margin: 20px 0 20px 0;
 
   @media only screen and (max-width: 600px) {
-    width: 90%;
-    margin: 10% 0 10% 0;
+    width: 90vw;
+    margin-left: 2vw;
 
     #self-taught {
-      margin-top: -8vh;
-      width: 95vw;
-      padding: 0 8px 0 8px;
+      margin: -8vh 15vw 0 0vw;
     }
     #my-journey,
     #last-info {
-      width: 95vw;
-      padding: 0 8px 0 8px;
+      margin: 0 15vw 0 0vw;
     }
   }
 `;

@@ -30,6 +30,7 @@ import {
   SiStyledcomponents,
   SiTypescript,
 } from "react-icons/si";
+import "../styles/Tech.css";
 
 function Technologies() {
   return (

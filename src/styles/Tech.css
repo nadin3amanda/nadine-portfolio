@@ -1,0 +1,48 @@
+/* Technologies */
+.all-tools {
+  width: 55vw;
+  padding: 10px;
+  margin-top: -2vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 20px;
+}
+
+.tools-col {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 20vw;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+}
+
+.tools-design {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  width: 100%;
+}
+
+.tools-dev {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  width: 100%;
+}
+
+.tools h5 {
+  grid-column: span 3;
+  text-align: center;
+  margin-bottom: 10px;
+}

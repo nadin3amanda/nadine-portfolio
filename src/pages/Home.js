@@ -23,7 +23,8 @@ function Home() {
                 Pixel Perfectionist
               </span>{" "}
               & <em>Your Go-To UI/UX Alchemist</em>: Crafting User Experiences
-              with a Decade of Design, Debugging, and Iced Coffee shaking.
+              with a Decade of Design, Debugging, and <br />
+              Iced Coffee shaking.
             </p>
           </div>
         </div>

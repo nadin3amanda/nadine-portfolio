@@ -46,3 +46,40 @@
   text-align: center;
   margin-bottom: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .all-tools {
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tools-col {
+    width: 90vw;
+    margin-right: 4vw;
+    justify-items: center;
+  }
+  .tools-col h5 {
+    margin-top: -2vh;
+  }
+
+  .tools-dev {
+    margin: 0 50% 0 20%;
+  }
+  .tools-design {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, auto);
+    margin: 0 50% 0 20%;
+  }
+  #tools-workspace {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin: 0 60% 0 10%;
+    gap: 20px;
+    width: 100%;
+  }
+}

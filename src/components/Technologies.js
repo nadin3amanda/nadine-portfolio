@@ -77,13 +77,15 @@ function Technologies() {
           <h5>Workspace & Others</h5>
           <div className="tools-grid">
             <div className="tools-design">
-              <SiMiro title="Miro" />
-              <SiClickup title="ClickUp" />
-              <FaGithub title="GitHub" />
-              <FaTrello title="Trello" />
-              <SiAsana title="Asana" />
-              <FaWindows title="Windows" />
-              <FaApple title="Apple" />
+              <div id="tools-workspace">
+                <SiMiro title="Miro" />
+                <SiClickup title="ClickUp" />
+                <FaGithub title="GitHub" />
+                <FaTrello title="Trello" />
+                <SiAsana title="Asana" />
+                <FaWindows title="Windows" />
+                <FaApple title="Apple" />
+              </div>
             </div>
           </div>
         </div>

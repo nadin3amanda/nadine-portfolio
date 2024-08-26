@@ -14,6 +14,8 @@
 
 .logo {
   flex: 1;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .links {
@@ -69,7 +71,7 @@
   }
 
   .logo {
-    margin-right: -8vw;
+    margin: 0 -20vw 0 35vw;
   }
 
   .links {

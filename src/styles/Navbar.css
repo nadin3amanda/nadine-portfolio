@@ -44,6 +44,14 @@
   text-decoration: wavy;
 }
 
+.desktop-moon {
+  display: block;
+}
+
+.mobile-moon {
+  display: none;
+}
+
 .toggleButton {
   display: none;
 }
@@ -54,7 +62,6 @@
   color: white;
   cursor: pointer;
 }
-
 
 @media only screen and (max-width: 600px) {
   .toggleButton {
@@ -91,5 +98,17 @@
     padding: 10px;
     margin: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .mobile-moon {
+    display: block;
+    position: absolute;
+    top: 39px;
+    left: 20px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .desktop-moon {
+    display: none;
   }
 }

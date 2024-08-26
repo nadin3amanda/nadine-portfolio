@@ -53,6 +53,9 @@ function Navbar() {
         >
           About
         </Link>
+        <FaMoon onClick={handleThemeSwitch} className="cursor-pointer desktop-moon" />
+      </div>
+      <div className="mobile-moon">
         <FaMoon onClick={handleThemeSwitch} className="cursor-pointer" />
       </div>
     </div>

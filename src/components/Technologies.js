@@ -1,5 +1,5 @@
 import React from "react";
-import { DiIllustrator, DiPhotoshop } from "react-icons/di";
+import { DiJqueryUiLogo, DiIllustrator, DiPhotoshop } from "react-icons/di";
 import {
   FaApple,
   FaBootstrap,
@@ -47,6 +47,8 @@ function Technologies() {
               <FaHtml5 title="HTML5" />
               <FaCss3 title="CSS3" />
               <FaSass title="Sass" />
+              <DiJqueryUiLogo title="jQuery"/>
+              <FaBootstrap title="Bootstrap" />
               <RiTailwindCssLine title="Tailwind CSS" />
               <SiStyledcomponents title="Styled Components" />
               <FaJs title="JavaScript" />
@@ -56,7 +58,6 @@ function Technologies() {
               <FaYarn title="Yarn" />
               <FaGit title="Git" />
               <FaTerminal title="Terminal" />
-              <FaBootstrap title="Bootstrap" />
               <FaWordpress title="WordPress" />
               <FaElementor title="Elementor" />
             </div>

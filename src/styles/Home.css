@@ -118,20 +118,20 @@
 
 /* Home Projects */
 #project-container-1 {
-    width: 50vw;
-    height: 30vw;
-    justify-self: center;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: -26vh auto 0;
-    padding: 20%;
-    background: url('../assets/blue-biolet-watercolor.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+  width: 50vw;
+  height: 30vw;
+  justify-self: center;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: -26vh auto 0;
+  padding: 20%;
+  background: url("../assets/blue-biolet-watercolor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .description {
@@ -145,7 +145,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
@@ -165,4 +165,26 @@
 
 #soar-landing {
   width: 40%;
+}
+
+.more-button {
+  background: linear-gradient(
+    -75deg,
+    #86a8e7,
+    #5ffbf1
+  );
+  border: none; 
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  padding: 14px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.more-button:hover {
+  opacity: 0.8; 
 }

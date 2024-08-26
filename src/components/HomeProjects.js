@@ -25,6 +25,9 @@ export default function HomeProjects() {
           <span>UI/UX, Interaction, Web Development</span>
         </div>
       </div>
+      <Link to="/projects">
+        <button className="more-button">More</button>
+      </Link>
     </div>
   );
 }

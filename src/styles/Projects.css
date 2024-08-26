@@ -99,14 +99,3 @@
     height: 300px;
   }
 }
-
-/* Light & Dark mode */
-.light {
-  background-color: #f5f5f7;
-  color: #1a1a1a;
-}
-
-.dark {
-  background-color: #1a1a1a;
-  color: #f5f5f7;
-}

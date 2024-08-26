@@ -115,3 +115,54 @@
     font-size: 30px;
   }
 }
+
+/* Home Projects */
+#project-container-1 {
+    width: 50vw;
+    height: 30vw;
+    justify-self: center;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: -26vh auto 0;
+    padding: 20%;
+    background: url('../assets/blue-biolet-watercolor.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.description {
+  width: 20vw;
+  height: auto;
+  margin-top: 26px;
+  border: none;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+}
+
+.description h6 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #3e497a;
+  margin: 0;
+}
+
+.description span {
+  font-size: 16px;
+  color: #3e497a;
+  margin-top: 4px;
+}
+
+#soar-landing {
+  width: 40%;
+}

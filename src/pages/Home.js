@@ -2,6 +2,7 @@
 import React from "react";
 import { useTheme } from "../components/ThemeProvider";
 import "../styles/Home.css";
+import HomeProjects from "../components/HomeProjects";
 
 function Home() {
   const { theme } = useTheme();
@@ -28,6 +29,7 @@ function Home() {
             </p>
           </div>
         </div>
+        <HomeProjects />
       </div>
     </div>
   );

@@ -50,10 +50,4 @@ export const ProjectList = [
     skills: "JavaScript,HTML,CSS",
     link: "https://github.com/nadin3amanda/Gaming-Stat-Page",
   },
-  {
-    name: "Gaming Stats Layout",
-    image: Proj5,
-    skills: "JavaScript,HTML,CSS",
-    link: "https://github.com/nadin3amanda/Gaming-Stat-Page",
-  },
 ];

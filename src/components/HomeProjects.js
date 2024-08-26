@@ -41,6 +41,7 @@ export default function HomeProjects() {
         </div>
       </div>
       <div id="project-container-3">
+        <Link to="https://reviewology.com/wellness-topics/why-moisturizers-are-important/" target="_blank" rel="nofollow">
         <img
           id="reviewology"
           src={
@@ -48,6 +49,7 @@ export default function HomeProjects() {
           }
           alt="reviewology blog -skin care"
         />
+        </Link>
         <div className="description">
           <h6>Reviewology - Blog SIte</h6>
           <span>UI/UX, Web Development</span>

@@ -10,6 +10,9 @@ body {
   background-color: #f5f5f7;
   height: 100vh;
   font-family: "Urbanist", sans-serif;
+}
+
+body, html {
   overflow-x: hidden;
 }
 

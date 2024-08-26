@@ -5,10 +5,10 @@
   background-size: 400% 400%;
   animation: gradient 20s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center items vertically */
-  justify-content: space-between; /* Distribute space between logo and links */
-  padding: 0 20px; /* Optional: Add padding for better spacing */
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 0 20px; 
   box-sizing: border-box;
 }
 .logo {

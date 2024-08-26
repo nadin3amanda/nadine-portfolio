@@ -4,12 +4,12 @@
   background: linear-gradient(-75deg, #ffe5d9, #86a8e7, #d16ba5, #5ffbf1);
   background-size: 400% 400%;
   animation: gradient 20s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .logo {
@@ -21,20 +21,6 @@
   align-items: center;
   gap: 20px;
   color: white;
-  overflow: hidden;
-}
-
-.links.active {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: flex-start;
-  align-items: center;
-  position: absolute;
-  top: 100px;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  height: calc(100vh - 100px);
 }
 
 .links a {
@@ -69,17 +55,41 @@
   cursor: pointer;
 }
 
+
 @media only screen and (max-width: 600px) {
   .toggleButton {
     display: flex;
   }
 
+  .logo {
+    margin-right: -8vw;
+  }
+
   .links {
     display: none;
     flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
   }
 
-  #open .links {
+  .links.active {
     display: flex;
+    transform: translateY(0);
+  }
+
+  .links a {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 }

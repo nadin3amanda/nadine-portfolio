@@ -36,8 +36,8 @@ function Navbar() {
           <Reorder />
         </button>
       </div>
-      
-      <div className="links">
+
+      <div className={`links ${expandNavbar ? "active" : ""}`}>
         <Link to="/" className={location.pathname === "/" ? "active" : ""}>
           Home
         </Link>

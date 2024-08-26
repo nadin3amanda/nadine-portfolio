@@ -107,6 +107,10 @@
 }
 
 /* Home Projects */
+.main-project-container {
+  margin: -30vh auto 0;
+}
+
 #project-container-1 {
   width: 50vw;
   justify-self: center;
@@ -115,7 +119,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: -10vh auto 0;
+  margin: 0 auto;
   padding: 20%;
   background: url("../assets/blue-biolet-watercolor.png");
   background-repeat: no-repeat;
@@ -123,7 +127,7 @@
   background-size: contain;
 }
 
-#project-container-2{
+#project-container-2 {
   width: 50vw;
   height: 30vw;
   justify-self: center;
@@ -140,7 +144,7 @@
   background-size: contain;
 }
 
-#project-container-3{
+#project-container-3 {
   width: 50vw;
   height: 30vw;
   justify-self: center;
@@ -202,12 +206,8 @@
 }
 
 .more-button {
-  background: linear-gradient(
-    -75deg,
-    #86a8e7,
-    #5ffbf1
-  );
-  border: none; 
+  background: linear-gradient(-75deg, #86a8e7, #5ffbf1);
+  border: none;
   border-radius: 8px;
   color: #fff;
   font-size: 16px;
@@ -220,7 +220,56 @@
 }
 
 .more-button:hover {
-  opacity: 0.8; 
+  opacity: 0.8;
 }
+/* Mobile View */
+@media only screen and (max-width: 600px) {
+  .main-project-container {
+    padding: 10px;
+    justify-items: center;
+  }
 
+  #project-container-1{
+    width: 100vw;
+    margin: 10vh 0 6vh -20vw;
+    background: url("../assets/blue-biolet-watercolor.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 
+  #project-container-2 {
+    width: 100vw;
+    margin: 5vh 0 6vh -20vw;
+    background: url("../assets/blue-biolet-watercolor.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  #project-container-3 {
+    width: 100vw;
+    margin: 5vh 0 10px -20vw;
+  }
+
+  .description {
+    width: 85vw;
+  }
+
+  .description h6 {
+    font-size: 18px;
+  }
+
+  .description span {
+    font-size: 14px;
+  }
+
+  #soar-landing,
+  #itadakimasu-app,
+  #reviewology {
+    width: 90vw;
+  }
+
+  .more-button {
+    margin-top: 8vh;
+  }
+}

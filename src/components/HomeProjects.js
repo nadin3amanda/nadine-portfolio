@@ -8,6 +8,7 @@ export default function HomeProjects() {
   const { theme } = useTheme();
   return (
     <div className={theme}>
+      <div className="main-project-container">
       <div id="project-container-1">
         <Link
           to="https://nadine-dev-portfolio.my.canva.site/soar-earth-landing-page-by-nadine-amanda"
@@ -58,6 +59,7 @@ export default function HomeProjects() {
       <Link to="/projects">
         <button className="more-button">More</button>
       </Link>
+      </div>
     </div>
   );
 }

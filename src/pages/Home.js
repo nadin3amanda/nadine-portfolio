@@ -29,8 +29,8 @@ function Home() {
             </p>
           </div>
         </div>
-        <HomeProjects />
       </div>
+      <HomeProjects />
     </div>
   );
 }

@@ -27,10 +27,20 @@
 
 .tools-design {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
   gap: 20px;
   width: 100%;
+  margin-left: 3vw;
+}
+
+#tools-workspace {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  width: 100%;
+  margin-left: 3vw;
 }
 
 .tools-dev {
@@ -39,6 +49,7 @@
   grid-template-rows: repeat(3, auto);
   gap: 20px;
   width: 100%;
+  margin-left: 2vw;
 }
 
 .tools h5 {
@@ -66,19 +77,19 @@
   }
 
   .tools-dev {
-    margin: 0 50% 0 20%;
+    margin: 0 10% 0 30%;
   }
   .tools-design {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, auto);
-    margin: 0 50% 0 20%;
+    margin: 0 10% 0 40%;
   }
   #tools-workspace {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
-    margin: 0 60% 0 10%;
+    margin: 0 10% 0 50%;
     gap: 20px;
     width: 100%;
   }

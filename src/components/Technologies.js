@@ -77,7 +77,6 @@ function Technologies() {
         <div className="tools-col">
           <h5>Workspace & Others</h5>
           <div className="tools-grid">
-            <div className="tools-design">
               <div id="tools-workspace">
                 <SiMiro title="Miro" />
                 <SiClickup title="ClickUp" />
@@ -86,7 +85,6 @@ function Technologies() {
                 <SiAsana title="Asana" />
                 <FaWindows title="Windows" />
                 <FaApple title="Apple" />
-              </div>
             </div>
           </div>
         </div>

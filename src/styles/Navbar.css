@@ -5,27 +5,15 @@
   background-size: 400% 400%;
   animation: gradient 20s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between; 
-  padding: 0 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
   box-sizing: border-box;
 }
+
 .logo {
   flex: 1;
-  align-self: center;
-  display: flex;
-}
-@keyframes gradient {
-  0%,
-  100% {
-    background-position: 0% 50%;
-    transform: scale(1);
-  }
-  50% {
-    background-position: 100% 50%;
-    transform: scale(1.1);
-  }
 }
 
 .links {
@@ -36,8 +24,20 @@
   overflow: hidden;
 }
 
-.navbar a,
-a::before {
+.links.active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: calc(100vh - 100px);
+}
+
+.links a {
   color: white;
   text-decoration: none;
   margin: 20px;
@@ -45,92 +45,41 @@ a::before {
   font-size: 20px;
 }
 
-.navbar a:hover {
+.links a:hover {
   color: #86a8e7;
   text-decoration-color: #5ffbf1;
   text-decoration: wavy;
-  margin: 20px;
   font-weight: 700;
-  letter-spacing: 1.5;
 }
 
-.navbar a.active,
-.navbar a:active {
+.links a.active {
   color: #d16ba5;
   font-weight: 600;
   text-decoration: wavy;
-  text-decoration-color: #d16ba5;
-}
-
-.navbar a::after {
-  font-weight: 700;
-  color: #86a8e7;
 }
 
 .toggleButton {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  cursor: pointer;
+  display: none;
 }
 
-.toggleButton svg {
-  font-size: 30px;
-}
 .toggleButton button {
-  margin-right: 20px;
   background-color: transparent;
   border: none;
   color: white;
   cursor: pointer;
 }
 
-#open {
-  height: 100vh;
-}
-
-#open .links {
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 100px;
-}
-
-#open a {
-  width: 100%;
-  text-align: center;
-}
-
-@media only screen and (max-width: 900px) {
-  .navbar a {
-    width: 70px;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .toggleButton {
     display: flex;
   }
-  #close a {
-    display: none;
-  }
-}
 
-@media only screen and (min-width: 600px) {
-  .toggleButton {
+  .links {
     display: none;
-  }
-
-  .hiddenLinks {
-    display: none;
-  }
-
-  #open {
-    height: 100px;
+    flex-direction: column;
   }
 
   #open .links {
-    flex-direction: row;
+    display: flex;
   }
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Reorder from "@material-ui/icons/Reorder";
 import { FaMoon } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import nadineLogo from "../assets/brand/nadine_logo.png";
@@ -26,6 +27,16 @@ function Navbar() {
           />
         </Link>
       </div>
+      <div className="toggleButton">
+        <button
+          onClick={() => {
+            setExpandNavbar((prev) => !prev);
+          }}
+        >
+          <Reorder />
+        </button>
+      </div>
+      
       <div className="links">
         <Link to="/" className={location.pathname === "/" ? "active" : ""}>
           Home

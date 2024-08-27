@@ -1,0 +1,20 @@
+# Allow all bots to crawl everything
+User-agent: *
+Disallow:
+
+# Block internal directories or files
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Disallow: /search
+
+# Block specific user agents
+User-agent: BadBot
+Disallow: /
+
+# Block image indexing
+User-agent: Googlebot-Image
+Disallow: /
+
+# Add Sitemap
+# Sitemap: https://www.example.com/sitemap.xml

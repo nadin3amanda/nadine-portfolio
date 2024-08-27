@@ -11,17 +11,19 @@ import ProjectDisplay from "./pages/ProjectDisplay";
 function App() {
   return (
     <ThemeProvider>
-      <div className="App">
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/project/:id" element={<ProjectDisplay />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-          <Footer />
-        </Router>
+      <div className="h-screen flex justify-center items-center">
+        <div className="App">
+          <Router>
+            <Navbar />
+            <Routes>
+              <Route path="" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/project/:id" element={<ProjectDisplay />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+            <Footer />
+          </Router>
+        </div>
       </div>
     </ThemeProvider>
   );

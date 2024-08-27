@@ -6,22 +6,17 @@
 body {
   padding: 0;
   margin: 0;
-  color: #1a1919;
-  background-color: #f5f5f7;
   height: 100vh;
   font-family: "Urbanist", sans-serif;
 }
 
-body, html {
-  overflow-x: hidden;
-}
-
-body, .light {
+/* Apply background colors to the body based on theme */
+body.light {
   background-color: #f5f5f7;
   color: #86a8e7;
 }
 
-body, .dark {
+body.dark {
   background-color: #1a1a1a;
   color: #ffffff;
 }

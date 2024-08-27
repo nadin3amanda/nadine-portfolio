@@ -11,7 +11,7 @@ export const ProjectList = [
     name: "Digital Atlas Landing Page",
     image: Proj6,
     skills: "React, React Carousel, TypeScript, HTML,CSS",
-    link: "https://soar.earth",
+    link: "https://nadine-dev-portfolio.my.canva.site/soar-earth-landing-page-by-nadine-amanda",
   },
 
   {

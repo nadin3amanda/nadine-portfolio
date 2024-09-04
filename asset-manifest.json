@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nadine-portfolio/static/css/main.3398f7a5.css",
-    "main.js": "/nadine-portfolio/static/js/main.cc9f2512.js",
+    "main.css": "/nadine-portfolio/static/css/main.4b828012.css",
+    "main.js": "/nadine-portfolio/static/js/main.957e6d81.js",
     "static/media/blue-biolet-watercolor.png": "/nadine-portfolio/static/media/blue-biolet-watercolor.11d947844073e92198a6.png",
     "static/media/project7-valorant.PNG": "/nadine-portfolio/static/media/project7-valorant.d403e7ab58c2f87058fe.PNG",
     "static/media/project3-pokemon.PNG": "/nadine-portfolio/static/media/project3-pokemon.420d609704d48856af0d.PNG",
@@ -16,11 +16,11 @@
     "static/media/nadine_and_cat.jpg": "/nadine-portfolio/static/media/nadine_and_cat.35767b606bb4d4cab361.jpg",
     "static/media/nadine_logo.png": "/nadine-portfolio/static/media/nadine_logo.7295951e3297600f61f8.png",
     "index.html": "/nadine-portfolio/index.html",
-    "main.3398f7a5.css.map": "/nadine-portfolio/static/css/main.3398f7a5.css.map",
-    "main.cc9f2512.js.map": "/nadine-portfolio/static/js/main.cc9f2512.js.map"
+    "main.4b828012.css.map": "/nadine-portfolio/static/css/main.4b828012.css.map",
+    "main.957e6d81.js.map": "/nadine-portfolio/static/js/main.957e6d81.js.map"
   },
   "entrypoints": [
-    "static/css/main.3398f7a5.css",
-    "static/js/main.cc9f2512.js"
+    "static/css/main.4b828012.css",
+    "static/js/main.957e6d81.js"
   ]
 }

@@ -1,15 +1,38 @@
 .navbar {
+  position: relative;
   width: 100%;
   height: 100px;
-  background: linear-gradient(-75deg, #ffe5d9, #86a8e7, #d16ba5, #5ffbf1);
-  background-size: 400% 400%;
-  animation: gradient 20s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
   box-sizing: border-box;
-  position: relative;
+  overflow: hidden;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-75deg, #ffe5d9, #86a8e7, #d16ba5, #5ffbf1);
+  background-size: 400% 400%;
+  animation: gradient 20s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  z-index: -1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .logo {

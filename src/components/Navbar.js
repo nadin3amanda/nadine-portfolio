@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
 import Reorder from "@material-ui/icons/Reorder";
+import React, { useEffect, useState } from "react";
 import { FaMoon } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import nadineLogo from "../assets/brand/nadine_logo.png";
@@ -14,6 +14,10 @@ function Navbar() {
   }, [location]);
 
   const { handleThemeSwitch } = useTheme();
+  const toggleNavbar = () => {
+    console.log("Toggling Navbar");
+    setExpandNavbar((prev) => !prev);
+  };
 
   return (
     <div className="navbar" id={expandNavbar ? "open" : "close"}>
@@ -28,11 +32,7 @@ function Navbar() {
         </Link>
       </div>
       <div className="toggleButton">
-        <button
-          onClick={() => {
-            setExpandNavbar((prev) => !prev);
-          }}
-        >
+        <button onClick={toggleNavbar}>
           <Reorder />
         </button>
       </div>
@@ -53,7 +53,10 @@ function Navbar() {
         >
           About
         </Link>
-        <FaMoon onClick={handleThemeSwitch} className="cursor-pointer desktop-moon" />
+        <FaMoon
+          onClick={handleThemeSwitch}
+          className="cursor-pointer desktop-moon"
+        />
       </div>
       <div className="mobile-moon">
         <FaMoon onClick={handleThemeSwitch} className="cursor-pointer" />

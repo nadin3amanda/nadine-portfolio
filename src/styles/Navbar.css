@@ -92,6 +92,7 @@
   .navbar {
     width: 100vw;
   }
+
   .toggleButton {
     display: flex;
   }
@@ -108,23 +109,29 @@
     right: 0;
     background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
+    height: auto;
+    max-height: 80vh;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 0 0 10px 10px;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .links.active {
     display: flex;
-    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
   }
 
   .links a {
     width: 100%;
     text-align: center;
     padding: 10px;
-    margin: 0;
+    margin: 10px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   .mobile-moon {

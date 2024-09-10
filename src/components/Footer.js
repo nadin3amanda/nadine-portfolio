@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="socialMedia">
-        <Link to="https://www.linkedin.com/in/nadine-amanda-ortega/">
+        <Link to="https://www.linkedin.com/in/nadine-ortega/">
           <FaLinkedin />
         </Link>
         <Link to="https://github.com/nadin3amanda">

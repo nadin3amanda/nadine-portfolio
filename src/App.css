@@ -3,11 +3,18 @@
   text-align: center;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
   height: 100vh;
   font-family: "Urbanist", sans-serif;
+  overflow-x: hidden;
 }
 
 body.light {

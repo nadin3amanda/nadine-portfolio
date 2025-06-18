@@ -1,5 +1,4 @@
-import React from "react";
-import { DiJqueryUiLogo, DiIllustrator, DiPhotoshop } from "react-icons/di";
+import { DiIllustrator, DiJqueryUiLogo, DiPhotoshop } from "react-icons/di";
 import {
   FaApple,
   FaBootstrap,
@@ -10,6 +9,7 @@ import {
   FaGit,
   FaGithub,
   FaHtml5,
+  FaJira,
   FaJs,
   FaNodeJs,
   FaNpm,
@@ -37,6 +37,17 @@ function Technologies() {
     <div className="skills">
       <h4>Technologies</h4>
       <div className="all-tools">
+                <div className="tools-col">
+          <h5>Design</h5>
+          <div className="tools-grid">
+            <div className="tools-design">
+              <FaFigma title="Figma" />
+              <DiPhotoshop title="Photoshop" />
+              <DiIllustrator title="Illustrator" />
+              <SiCanva title="Canva" />
+            </div>
+          </div>
+        </div>
         <div className="tools-col">
           <h5>Development</h5>
           <div className="tools-grid">
@@ -64,23 +75,13 @@ function Technologies() {
           </div>
         </div>
         <div className="tools-col">
-          <h5>Design</h5>
-          <div className="tools-grid">
-            <div className="tools-design">
-              <FaFigma title="Figma" />
-              <DiPhotoshop title="Photoshop" />
-              <DiIllustrator title="Illustrator" />
-              <SiCanva title="Canva" />
-            </div>
-          </div>
-        </div>
-        <div className="tools-col">
           <h5>Workspace & Others</h5>
           <div className="tools-grid">
               <div id="tools-workspace">
                 <SiMiro title="Miro" />
                 <SiClickup title="ClickUp" />
                 <FaGithub title="GitHub" />
+                <FaJira title="Jira" />
                 <FaTrello title="Trello" />
                 <SiAsana title="Asana" />
                 <FaWindows title="Windows" />

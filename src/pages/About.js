@@ -1,4 +1,3 @@
-import React from "react";
 import styled, { keyframes } from "styled-components";
 import profile2 from "../assets/about/nadine_and_cat.jpg";
 import profile3 from "../assets/about/nadine_as_sage.jpg";
@@ -139,14 +138,10 @@ export default function About() {
           <InfoContainer>
             <ColumnInfo>
               <div id="self-taught">
-                Self-Taught Developer with 7+ Years of Crafting Websites and a
-                Decade of Multicultural Experience—Passionate About Learning,
-                Solving Problems, and Making the Web a Better Place, One Pixel
-                at a Time!
-                <br />
-                <br />
-                If it’s on the web, I’ve probably designed, developed, or
-                debugged it!
+I’m a creative and strategic UI/UX Designer with over 7 years of experience crafting user-centered digital experiences.
+<br /><br />Now leading as a Director, I bring design vision, team mentorship, and cross-functional collaboration to the forefront. I’m passionate about solving real problems through intuitive design and continuously evolving my craft with new tools and techniques.
+<br />
+                
               </div>
             </ColumnInfo>
             <Image src={profile1} alt="Profile" style={{ marginTop: "50px" }} />
@@ -166,6 +161,7 @@ export default function About() {
             <Image src={profile2} alt="Profile" />
             <ColumnInfo>
               <div id="last-info">
+                Cross-Functional Career:
                 From Technical Support to Customer Insight Consultant, and
                 finally to Executive Assistant—has shaped my work ethic and
                 honed my skills. I’ve mastered communication, quality assurance,

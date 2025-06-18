@@ -1,8 +1,9 @@
 /* eslint-disable react/style-prop-object */
-import React from "react";
+import ProjectItem from "../components/ProjectItem";
+import Technologies from "../components/Technologies";
 import { useTheme } from "../components/ThemeProvider";
+import { ProjectList } from "../helpers/ProjectList";
 import "../styles/Home.css";
-import HomeProjects from "../components/HomeProjects";
 
 function Home() {
   const { theme } = useTheme();
@@ -29,8 +30,23 @@ function Home() {
             </p>
           </div>
         </div>
+        
+        <div className="projectList" id="project-container-1">
+          {ProjectList.map((project, idx) => {
+            return (
+              <ProjectItem
+                id={idx}
+                name={project.name}
+                image={project.image}
+                skills={project.skills}
+                link={project.link}
+              />
+            );
+          })}
+        </div>
+        
+        <Technologies />
       </div>
-      <HomeProjects />
     </div>
   );
 }

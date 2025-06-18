@@ -1,12 +1,37 @@
 import Proj1 from "../assets/project1-crypto.PNG";
+import Proj10 from "../assets/project10-akaza.png";
 import Proj2 from "../assets/project2-blog.PNG";
 import Proj3 from "../assets/project3-pokemon.PNG";
 import Proj4 from "../assets/project4-giane.PNG";
 import Proj5 from "../assets/project5-gaming.PNG";
 import Proj6 from "../assets/project6-landing.png";
 import Proj7 from "../assets/project7-valorant.PNG";
+import Proj8 from "../assets/project8.PNG";
+import Proj9 from "../assets/project9.PNG";
 
 export const ProjectList = [
+
+  {
+    name: "Skills Verification Website",
+    image: Proj8,
+    skills: "Figma",
+    link: "https://www.figma.com/proto/vHEf595O3MO31BWKeATeiU/Skills-Verification?node-id=1-700&t=VG2Wb9C6m1wg1tzZ-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&hide-ui=1",
+  },
+
+  {
+    name: "Job Listing MarketPlace",
+    image: Proj10,
+    skills: "Figma",
+    link: "https://akaza.io",
+  },
+
+  {
+    name: "Itadakimasu Japanese Food App",
+    image: Proj9,
+    skills: "Figma",
+    link: "https://www.figma.com/design/x9Zpu7zFFJ7GL8KtvfhROx/Itadakimasu?node-id=1-2&t=IkiOL7jtGkr00E07-0",
+  },
+  
   {
     name: "Digital Atlas Landing Page",
     image: Proj6,

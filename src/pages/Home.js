@@ -1,6 +1,5 @@
 /* eslint-disable react/style-prop-object */
 import ProjectItem from "../components/ProjectItem";
-import Technologies from "../components/Technologies";
 import { useTheme } from "../components/ThemeProvider";
 import { ProjectList } from "../helpers/ProjectList";
 import "../styles/Home.css";
@@ -30,7 +29,7 @@ function Home() {
           </div>
         </div>
         
-        <div className="projectList" id="project-container-1">
+        <div className="projectList" >
           {ProjectList.map((project, idx) => {
             return (
               <ProjectItem
@@ -43,8 +42,6 @@ function Home() {
             );
           })}
         </div>
-        
-        <Technologies />
       </div>
     </div>
   );

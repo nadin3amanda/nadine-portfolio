@@ -111,22 +111,6 @@
   margin: -30vh auto 0;
 }
 
-#project-container-1 {
-  width: 50vw;
-  justify-self: center;
-  background: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 20%;
-  background: url("../assets/blue-biolet-watercolor.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
 #project-container-2 {
   width: 50vw;
   height: 30vw;

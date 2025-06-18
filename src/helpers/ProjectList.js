@@ -1,5 +1,7 @@
 import Proj1 from "../assets/project1-crypto.PNG";
 import Proj10 from "../assets/project10-akaza.png";
+import Proj11 from "../assets/project11-oasis.PNG";
+import Proj12 from "../assets/project12-uxdesign&writing.png";
 import Proj2 from "../assets/project2-blog.PNG";
 import Proj3 from "../assets/project3-pokemon.PNG";
 import Proj4 from "../assets/project4-giane.PNG";
@@ -26,6 +28,20 @@ export const ProjectList = [
   },
 
   {
+    name: "Pool Construction Company",
+    image: Proj11,
+    skills: "Figma",
+    link: "https://www.figma.com/proto/DNVVCVB7zQc4v19vzdoTCg/Oasis-Poolworks?node-id=4-44&t=PZtU7NulSG3mg3ZG-0&scaling=min-zoom&content-scaling=fixed&page-id=4%3A26&starting-point-node-id=4%3A44",
+  },
+
+    {
+    name: "UX Design and Writing",
+    image: Proj12,
+    skills: "Figma, WordPress, Writing",
+    link: "https://nadine-dev-portfolio.my.canva.site/hi-there-i-m-nadine-portfolio-ux-writing"
+    },
+
+    {
     name: "Itadakimasu Japanese Food App",
     image: Proj9,
     skills: "Figma",

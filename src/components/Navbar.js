@@ -1,6 +1,6 @@
 import Reorder from "@material-ui/icons/Reorder";
-import React, { useEffect, useState } from "react";
-import { FaMoon } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import nadineLogo from "../assets/brand/nadine_logo.png";
 import { useTheme } from "../components/ThemeProvider";
@@ -9,15 +9,27 @@ import "../styles/Navbar.css";
 function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
   const location = useLocation();
+
   useEffect(() => {
     setExpandNavbar(false);
   }, [location]);
 
-  const { handleThemeSwitch } = useTheme();
+  const { theme, handleThemeSwitch } = useTheme();
+
+  useEffect(() => {
+    setExpandNavbar(false);
+  }, [location]);
+
+  useEffect(() => {
+    document.body.style.overflow = expandNavbar ? "hidden" : "auto";
+  }, [expandNavbar]);
+  
   const toggleNavbar = () => {
     console.log("Toggling Navbar");
     setExpandNavbar((prev) => !prev);
   };
+
+  const ThemeIcon = theme === "dark" ? FaSun : FaMoon;
 
   return (
     <div className="navbar" id={expandNavbar ? "open" : "close"}>
@@ -59,7 +71,7 @@ function Navbar() {
         />
       </div>
       <div className="mobile-moon">
-        <FaMoon onClick={handleThemeSwitch} className="cursor-pointer" />
+        <ThemeIcon onClick={handleThemeSwitch} className="cursor-pointer" />
       </div>
     </div>
   );

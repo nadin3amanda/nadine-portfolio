@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Modak&family=Urbanist:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+html, body {
+  overflow-x: hidden;
+}
+
 .home {
   width: 100%;
   align-items: center;
@@ -122,7 +127,6 @@
   justify-content: center;
   margin: -55vh auto 0;
   padding: 20%;
-  /* background: url("../assets/blue-biolet-watercolor.png"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -213,27 +217,19 @@
     justify-items: center;
   }
 
-  #project-container-1{
-    width: 100vw;
-    margin: 10vh 0 6vh -20vw;
-    background: url("../assets/blue-biolet-watercolor.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
 
-  #project-container-2 {
-    width: 100vw;
-    margin: 5vh 0 6vh -20vw;
-    background: url("../assets/blue-biolet-watercolor.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
+  #project-container-1,
+  #project-container-2,
   #project-container-3 {
-    width: 100vw;
-    margin: 5vh 0 10px -20vw;
-  }
+  width: 100%;
+  margin: 5vh auto;
+  padding: 0 10vw;
+  background: url("../assets/blue-biolet-watercolor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 
   .description {
     width: 85vw;
